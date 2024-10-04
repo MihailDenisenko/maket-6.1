@@ -1,0 +1,110 @@
+@import "./var";
+@import "../libs/normalize";
+
+html {
+    box-sizing: border-box;
+}
+
+.body {
+    min-width: 320px;
+    width: 90%;
+    height: 700px;
+}
+.border {
+    border: 1px solid black;
+}
+.headen {
+    display: none;
+} 
+
+.navigation__div {
+    display: flex;
+    width: 100%;
+    height: 88px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navigation__img {
+    position: relative;
+    background-color: #ff3e79;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    &:first-child{
+        margin-left: 10px;
+   }
+   &:last-child{
+        margin-right: 16px;
+        margin-left: 2%;
+   }
+   :hover {
+    transition: all .5s;
+    transform: scale(1.2);
+   }
+}
+ .navigation__image {
+    position: relative;
+    top: 25%;
+    left: 25%;
+  }
+  .navigation__logo {
+    margin-left: min(3%, 15%);
+  }
+  .navigation__divider {
+    height: 32px;
+    margin-left: auto;
+    margin-right: 3%;
+    position: relative;
+    top: -5px;
+}
+.navigation__title{
+    background-color: $b-col;
+    margin: 0;
+    height: 80px;
+    padding-top: 5px;
+    // padding-bottom: 10px;
+     & {
+        margin: 0;
+        font-family: $tt-m;
+        padding-left: 16px;
+        &::after{
+            content: "";
+            width: 4px;
+            height: 40px;
+            background-color: $divider;
+            position: absolute;
+            top: 110px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            left: 1px;
+        }
+    }
+}
+.swiper{
+    background-color: $b-col;
+    width: 100%;
+    &__ul {
+        padding: 0;
+        padding-left: 16px;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 50%;
+    }
+    &__li  {
+        width: auto;
+        display: block;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        &:last-child {
+            margin-right: 40px;
+        }
+        &:hover {
+            border: $border_text solid 2px;
+        }
+    }
+}
