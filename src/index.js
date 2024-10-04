@@ -9,9 +9,9 @@ import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper-menu", {
   direction: "horizontal",
   slidesPerView: "auto",
-    spaceBetween: 30,
-  freeMode: true
+  spaceBetween: 30,
+  freeMode: true,
 });
