@@ -12,6 +12,6 @@ import "swiper/css/pagination";
 const swiper = new Swiper(".swiper-menu", {
   direction: "horizontal",
   slidesPerView: "auto",
-  spaceBetween: 30,
+  spaceBetween: 10,
   freeMode: true,
 });
