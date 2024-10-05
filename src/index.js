@@ -9,7 +9,7 @@ import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import './index.scss'
-
+// import './scripts/nav_menu-swiper'
 
 const swiper = new Swiper(".swiper-menu", {
   direction: "horizontal",
@@ -17,3 +17,4 @@ const swiper = new Swiper(".swiper-menu", {
   spaceBetween: 10,
   freeMode: true,
 });
+
