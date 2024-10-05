@@ -15,7 +15,10 @@ module.exports = {
     // open:true
   },
   // вход файла
-  entry: path.resolve(__dirname, "src", "index.js"),
+  entry: {
+    index: path.resolve(__dirname, "src", "index.js"),
+    main: path.resolve(__dirname, "src/scripts", "nav_menu-swiper.js"),
+  },
   // выход сборки
   output: {
     path: path.resolve(__dirname, "dist"),

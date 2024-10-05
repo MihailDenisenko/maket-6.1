@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import './index.scss'
 // import './scripts/nav_menu-swiper'
 
+
 const swiper = new Swiper(".swiper-menu", {
   direction: "horizontal",
   slidesPerView: "auto",
@@ -18,3 +19,4 @@ const swiper = new Swiper(".swiper-menu", {
   freeMode: true,
 });
 
+import {consol} from "./scripts/nav_menu-swiper.js"
