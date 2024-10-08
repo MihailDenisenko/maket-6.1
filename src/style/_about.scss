@@ -1,0 +1,64 @@
+@import "./var";
+
+@keyframes more {
+    
+    100% {
+        transform: translatey(3px);
+        color: $col_menu-hov;
+    }
+}
+
+
+.about {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (width>768px) {
+        flex-wrap: nowrap;        
+    }
+}
+.about__text {
+    display: block;
+    width: 100%;
+    @media screen and (width>768px) {
+        min-width: 50%;
+        width: 50%;
+        margin-bottom: auto;
+    }
+}
+.about_p {
+    padding-left: 15px;
+    height: 90px;
+    overflow: hidden;
+    //  @media screen and (width>768px) {
+    //    height: 200px;   
+    //    transition: all 1s;     
+    // }
+}
+.about__more {
+    margin-left: 25px;
+    // color: $col_menu-hov;
+    &:hover {
+        cursor: pointer;
+        animation-name: more;
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+        color: $col_menu-hov;
+    }
+}
+.about__logo {
+    width: 100%;
+    height: auto;
+    @media screen and (width>768) {
+        width: 50%;
+        height: auto;
+    }
+}
+.logo__img {
+    margin: 10px ;
+    width: 100%;
+    height: auto;
+    @media screen and (width>768) {
+        margin: 15px;        
+    }
+}

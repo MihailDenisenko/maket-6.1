@@ -1,0 +1,120 @@
+.order-call {
+    width: 320PX;
+    background-color: #FFF;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 100%auto;
+    @media screen and (width>768px) {
+        height: 100%;  
+        width: 440px;      
+    }
+
+}
+
+.order-call__close {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    @media screen and (width>768px) {
+        position: absolute;
+        right: 70px;  
+        top: 15px;      
+    }
+}
+.navigation__img {
+    left: 16px;
+}
+
+.order-call__title {
+    display: block;
+    width: 100%;
+    @media screen and (width>768px) {
+        height: 80px;        
+        padding-top: 15px;
+    }
+}
+.order-call__h1 {
+    padding-left: 16px;
+    margin: 15px 0;
+    font-family: $tt-b;
+    &::before{
+        content: "";
+        width: 4px;
+        height: 32px;
+        background-color: $divider;
+        left: 0px;
+        position: absolute;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+.order-call__form {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (width>768px) {
+        position: absolute;
+        top: 100px;
+    }
+
+}
+.order-call__input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 48px;
+    border-color: $form-border-color;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    &:active {
+    border-color: $form-border-color;
+    border: #FFF 1px solid;
+        
+    }
+}
+.order-call__text {
+    height: 118px;
+}
+.order-call__lbl {
+    margin-left: 10px;
+    font-size: 16px;
+    padding-top: 10px;
+    color: $col_menu-hov;
+    margin-bottom: 25px;
+    @media screen and (width>768px) {
+        margin-bottom: 10px;
+        padding: 0;
+        
+    }
+}
+
+.order-call__btn {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: 35px;
+    margin-bottom: 40px;
+    background-color: $b-i-col;
+    color: #FFF;
+    border: none;
+    border-radius: 40%;
+    width: 136px;
+    height: 32px;
+    border-top-left-radius:     16px;
+    border-top-right-radius:    16px;
+    border-bottom-left-radius:  16px;
+    border-bottom-right-radius: 16px;
+    cursor: pointer;    
+    &:hover {
+        opacity: .7;
+    }
+    @media screen and (width>768px) {
+        margin-top: 10px;        
+    }
+}
+
+.pusto {
+    height: auto;
+}

@@ -1,0 +1,29 @@
+.swiper-menu {
+    width: 100%;
+}
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    width: 90%;
+
+}
+.swiper-menu__ul {
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-menu__li {
+}
+.swiper-menu__a {
+    display: block;
+    width: fit-content;
+
+    vertical-align: middle;
+    padding: 5px 15px;
+    &:hover {
+        border: $divider solid 2px;
+        border-radius: 6px;
+    }
+}

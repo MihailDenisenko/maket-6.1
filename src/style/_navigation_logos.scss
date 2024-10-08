@@ -1,0 +1,146 @@
+@import "./var";
+.navigation_headen-110 {
+    display: block;
+    @media screen and (width> 1140px) {
+        display: none;
+    }
+}
+
+.navigation_headen-320 {
+    display: none;
+    @media screen and (width>768px) {
+        display: block;
+        @media screen and (width> 1140px) {
+        display: none;
+    }
+    }
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.navigation__div {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;    
+    @media screen and (width>768px) {
+        justify-content: start;
+        margin-left: 15px;
+        >.navigation__img {
+            margin-right: 15px;
+        }
+        >.navigation__logo {
+            margin-left: 75px;
+            &::before {
+                content: "";
+                width: 4px;
+                height: 32px;
+                left: 7%;
+                position: absolute;
+                background-color: #eaeaea;
+                position: absolute;
+                top: 25px;
+                left: 100px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+        }
+        > .navigation__img:nth-child(4) {
+            margin-left: auto;
+        }
+         > .navigation__img:nth-child(6) {
+            margin-right: 40px;
+            &::before {
+                content: "";
+                width: 4px;
+                height: 32px;
+                background-color: #eaeaea;
+                position: absolute;
+                top: 5px;
+                right: -20px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+        }
+    }
+    @media screen and (width>1140px) {
+        justify-content: end;    
+        > .navigation__img:not(:last-child) {
+            margin-right: 150px;
+            margin-left: auto;
+        }
+    }
+    > .navigation__img:last-child{
+        margin-right: 25px;
+        @media screen {
+            @media screen and (width> 1140px) {
+                margin-right: 40px;
+                &::before {
+                    content: "Статус Ремонта";
+                    background-color: none;
+                    right: 30px;
+                    top: 10px;
+                    position: absolute;
+                    width: 140px;
+                }
+            }
+        }
+    }
+    >.navigation__img:not(:last-child)::before {
+        @media screen and (width>1140px) {
+        content: "Оставить заявку";
+                    right: 30px;
+                    top: 10px;
+                    position: absolute;
+                    background-color: none;
+                    width: 140pX;  
+                    margin-left: auto; 
+                        
+        }
+    }
+
+}
+.navigation__img {
+}
+.navigation__a {
+}
+.menu_btn {
+}
+.navigation__image {
+}
+.menu {
+}
+.navigation__divider {
+}
+.headen {
+}
+.navigation__logo {
+     &::before {
+                content: "";
+                width: 4px;
+                height: 32px;
+                background-color: #eaeaea;
+                position: absolute;
+                top: 20px;
+                left: 20%;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+}
+.navigation__image-logo {
+}
+.navigation__title {
+}
+.title__h1 {
+}

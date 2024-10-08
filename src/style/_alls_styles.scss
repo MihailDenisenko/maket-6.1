@@ -1,0 +1,69 @@
+@import "./var";
+
+
+body {
+    font-family: $tt-m;
+    background-color: $b-col;
+}
+
+a {
+    text-decoration: none;
+    color: $col_menu;
+}
+a:hover:focus{
+    color: $col_menu-hov;
+}
+
+.main-menu {
+    @media screen and (width>1140px) {
+        position: absolute;
+        left: 320px;
+        
+    }
+}
+ul {
+    list-style: none;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.navigation__img {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: $b-i-col;
+    border-radius: 50%;
+    position: relative;
+    &:hover {
+        transition: all 2s;
+        opacity: .5;
+    }
+}
+.navigation__image {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+
+
+.feedback__a {
+    color: $b-i-col;
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.headen {
+    display: none;
+}
+
+.more-headen {
+    margin-top: 25px;
+    display: none;
+    @media screen and (width>768px) {
+        display: block;
+    }
+}

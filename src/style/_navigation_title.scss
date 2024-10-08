@@ -1,0 +1,28 @@
+.navigation__title {
+
+}
+
+.title__h1 {
+    font-family: $tt-b;
+    padding-left: 16px;
+    &::before{
+        content: "";
+        width: 4px;
+        height: 32px;
+        background-color: $divider;
+        position: absolute;
+        left: 0px;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    @media screen and (width>1140px) {
+        margin-top: 15px;
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        display: inline-block;
+        &::before{
+            left: -15px;
+        }
+    }
+}
