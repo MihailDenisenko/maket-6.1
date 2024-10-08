@@ -1,3 +1,5 @@
+@import "./var";
+
 .tehnics {
 }
 .tehnics__title {
@@ -13,6 +15,7 @@
         gap: 10px;
         margin: 15px 0;
         width: 100%;
+
     }
 }
 .swiper-slide {
@@ -20,6 +23,7 @@
 .tehnics__li {
     width: 240px;
     height: 160px;
+    margin-right: 20px;
 }
 .tehnics__div {
     align-self: flex-end;

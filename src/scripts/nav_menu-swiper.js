@@ -1,6 +1,5 @@
-// const menu_btn = document.querySelector(".menu_btn");
+const list_more = document.querySelector(".about__more");
 
-
-// menu_btn.addEventListener('click', ()=> {
-//   console.log('menu_btn')
-// })
+export const b = list_more.addEventListener('click', function () {
+    alert("listen More")
+});

@@ -69,11 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
         clickable: true,
       },
     }); 
-
-
-
-
-
   }
 });
+
 

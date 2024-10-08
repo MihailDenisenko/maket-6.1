@@ -1,8 +1,26 @@
 .com-prop {
+    display: block;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 16px;
+    @media screen and (width>768px) {
+        width: 421px;
+    }
 }
 .com-prop__span {
+    // margin-left: 16px;
+    display: block;
+    font-size: 14px;
 }
 .com-prop__div {
+    // font-family: $tt-b;
+    display: block;
+    margin-top: 25px;
+    &:hover {
+        cursor: pointer;
+        color: $col_menu-hov;
+    }
 }
 .com-prop__img {
+    margin-left: 15px;
 }

@@ -6,6 +6,7 @@ const devMode = mode === "development";
 const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { library } = require("webpack");
 
 module.exports = {
   mode,
@@ -23,7 +24,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     clean: true,
-    filename: "index.[contenthash].js",
+    filename: "[name].[contenthash].js",
+    library: "[name]"
     // assetModuleFilename: "asset/[hash][ext]",
   },
   // плагины

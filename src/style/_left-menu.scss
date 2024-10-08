@@ -1,4 +1,5 @@
 @import "./var";
+
 .left-menu-headen {
     display: none;
     @media screen and (width>1140px) {
@@ -6,13 +7,26 @@
     }
 }
 
+
+.navigation__img_max {
+    @media screen and (width>1140px) {
+        display: none;
+    }
+}
+
+.navigation__img_src {
+    @media screen and (width>1140px) {
+        margin-left: auto;
+    }
+}
 .left-menu {
+    padding-top: 15px;
     position: absolute;
     min-width: 320px;
     max-width: 320px;
     height: auto;
     background-color: #FFF;
-    @media screen and (height>600px) {
+    @media screen and (height>1140px) {
         height: 101vh;
     }
 }
@@ -39,6 +53,7 @@
             height: 0;
             width: 0;
         }
+       
     }
     > .navigation__img {
         position: absolute;
@@ -75,7 +90,7 @@
                 width: 4px;
                 height: 32px;
                 background-color: $divider;
-                left: 1px;
+                left: 15px;
                 position: absolute;
                 border-top-right-radius: 6px;
                 border-bottom-right-radius: 6px;
@@ -133,4 +148,10 @@
     }
 }
 .lang__a {
+}
+
+.under-left-menu {
+    width: 320px;
+    height: 1000px;
+    background-color: #FFF;
 }
