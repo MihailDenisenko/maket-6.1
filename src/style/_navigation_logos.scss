@@ -1,20 +1,5 @@
 @import "./var";
-.navigation_headen-110 {
-    display: block;
-    @media screen and (width> 1140px) {
-        display: none;
-    }
-}
 
-.navigation_headen-320 {
-    display: none;
-    @media screen and (width>768px) {
-        display: block;
-        @media screen and (width> 1140px) {
-        display: none;
-    }
-    }
-}
 
 .navigation {
     width: 100%;
@@ -50,6 +35,9 @@
                 border-top-right-radius: 6px;
                 border-top-right-radius: 6px;
                 border-bottom-right-radius: 6px;
+            }
+            @media screen and (width>1140px) {
+                display: none;
             }
         }
         > .navigation__img:nth-child(4) {

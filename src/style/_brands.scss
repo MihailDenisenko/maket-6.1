@@ -2,6 +2,7 @@
 
 .brands {
     position: relative;
+    margin-bottom: 45px;
 }
 .title {
     background-image: linear-gradient(to right, #f8f8f8, #fff);
@@ -24,20 +25,23 @@
 }
 .brands-swiper {
 }
+
+
 .swiper__ul {
     margin-top: 20px;
     @media screen and (width>768px) {
-        display: flex;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        gap: 20px;
-        height: 160px;
-        justify-content: center;
-        margin: 0;
-        margin-top: 20px;
-        padding: 0;
-        align-items: center;
-        overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            gap: 20px;
+            justify-content: center;
+            margin: 0;
+            margin-top: 20px;
+            padding: 0;
+            align-items: center;
+            height: 180px;
+            overflow: hidden;
+            transition: all .3s;
     }
     @media screen and (width>860px) {
         margin: 0 auto;   
@@ -48,6 +52,11 @@
   
     }
 }
+.brands__ul_more {
+    height: 280px;
+    transition: all 1s;
+}
+
 .swiper-slide {
    margin-right: 50px;
 }
@@ -95,6 +104,3 @@ top: 30%;
 left: 40%;
 }
 
-.li__headen {
-    display: none;
-}

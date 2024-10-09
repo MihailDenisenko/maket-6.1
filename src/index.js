@@ -12,14 +12,14 @@ import "swiper/css/pagination";
 
 import './index.scss'
 
-
-const swiper = new Swiper(".swiper-menu", {
-  direction: "horizontal",
-  slidesPerView: "auto",
-  spaceBetween: 50,
-  freeMode: true,
-});
-
+if (wid > 320 && wid < 1100) {
+  const swiper = new Swiper(".swiper-menu", {
+    direction: "horizontal",
+    slidesPerView: "auto",
+    spaceBetween: 50,
+    freeMode: true,
+  });
+}
 
 
 import "swiper/bundle";

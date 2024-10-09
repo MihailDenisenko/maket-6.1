@@ -56,14 +56,3 @@ ul {
     }
 }
 
-.headen {
-    display: none;
-}
-
-.more-headen {
-    margin-top: 25px;
-    display: none;
-    @media screen and (width>768px) {
-        display: block;
-    }
-}

@@ -1,11 +1,5 @@
 @import "./var";
 
-.left-menu-headen {
-    display: none;
-    @media screen and (width>1140px) {
-        display: block;        
-    }
-}
 
 
 .navigation__img_max {
@@ -13,19 +7,21 @@
         display: none;
     }
 }
-
 .navigation__img_src {
     @media screen and (width>1140px) {
         margin-left: auto;
     }
 }
 .left-menu {
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    order: 45;
     padding-top: 15px;
-    position: absolute;
     min-width: 320px;
     max-width: 320px;
     height: auto;
-    background-color: #FFF;
+    background-color: #f8f8f8;
     @media screen and (height>1140px) {
         height: 101vh;
     }
@@ -154,4 +150,8 @@
     width: 320px;
     height: 1000px;
     background-color: #FFF;
+}
+
+.navigation__left:hover {
+    opacity: .5;
 }

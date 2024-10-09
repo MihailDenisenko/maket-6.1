@@ -19,13 +19,14 @@ module.exports = {
   entry: {
     index: path.resolve(__dirname, "src", "index.js"),
     main: path.resolve(__dirname, "src/scripts", "nav_menu-swiper.js"),
+    about: path.resolve(__dirname, "src/scripts", "about.js"),
   },
   // выход сборки
   output: {
     path: path.resolve(__dirname, "dist"),
     clean: true,
     filename: "[name].[contenthash].js",
-    library: "[name]"
+    library: "[name]",
     // assetModuleFilename: "asset/[hash][ext]",
   },
   // плагины

@@ -1,24 +1,13 @@
 @import "./var";
 
-.tehnics {
-}
-.tehnics__title {
-}
-.tehnics__h2 {
-}
-.swiper-tehnics {
-}
-.swiper-wrapper {
+.tehnics {margin-bottom: 45px;
 }
 .tehnics__ul {
     @media screen and (width>1140px) {
         gap: 10px;
         margin: 15px 0;
         width: 100%;
-
     }
-}
-.swiper-slide {
 }
 .tehnics__li {
     width: 240px;
@@ -34,4 +23,9 @@
     margin: 16px;
 }
 .swiper-pagination {
+}
+
+.tech__ul_more {
+    height: 350px;
+    transition: all 1s;
 }
