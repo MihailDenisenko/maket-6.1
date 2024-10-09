@@ -12,14 +12,8 @@ import "swiper/css/pagination";
 
 import './index.scss'
 
-if (wid > 320 && wid < 1100) {
-  const swiper = new Swiper(".swiper-menu", {
-    direction: "horizontal",
-    slidesPerView: "auto",
-    spaceBetween: 50,
-    freeMode: true,
-  });
-}
+
+ 
 
 
 import "swiper/bundle";
@@ -27,7 +21,15 @@ import "swiper/bundle";
 // Функция проверки ширины экнрана 
 window.addEventListener('DOMContentLoaded', () => {
   var wid = document.querySelector('.body').clientWidth
-  
+  if (wid > 320 && wid < 1000) {
+   const swiper = new Swiper(".swiper-menu", {
+     direction: "horizontal",
+     slidesPerView: "auto",
+     spaceBetween: 50,
+     freeMode: true,
+   });
+  }
+
 //  Проверка (320-767 => swiper)
   if (wid > 320 && wid < 768) {
     console.log(`Новые размеры: ${wid}`);
