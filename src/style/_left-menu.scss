@@ -21,7 +21,7 @@
     min-width: 320px;
     max-width: 320px;
     height: auto;
-    background-color: #f8f8f8;
+    background-color: #fff;
     @media screen and (height>1140px) {
         height: 101vh;
     }
@@ -101,7 +101,7 @@
 //     display: none;
 // }
 .last-navigation {
-
+    background-color: #fff;
     display: flex;
     height: 60px;
     justify-content: start;
@@ -119,6 +119,8 @@
     }
 }
 .left-menu__contacts {
+    background-color: #fff;
+
     display: flex;
     flex-wrap: wrap;
     margin-left: 16px;
@@ -137,6 +139,7 @@
     }
 }
 .left-menu__lang {
+    background-color: #fff;
     margin-left: 16px;
     margin-bottom: 25px;
     &:hover{
