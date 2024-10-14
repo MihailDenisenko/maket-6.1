@@ -19,11 +19,14 @@
 
 
 .show__brands {
+    height: 230px;
 
 }
 
 .show__tech {
-
+@media screen and (width>1140px) {
+    display: none;
+}
 }
 .show_plus {
     width: 10px;

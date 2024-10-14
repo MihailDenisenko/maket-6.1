@@ -44,7 +44,7 @@
 .more-headen {
     margin-top: 25px;
     display: none;
-    @media screen and (width>768px) and (width<1140px) {
+    @media screen and (width>768px)  {
         display: block;
     }
 }
